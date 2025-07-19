@@ -39,7 +39,47 @@ class BusController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'nopol' => 'required',
+            'tahun_pembuatan' => 'required|string|max:255',
+            'tipe' => 'nullable|string',
+            'merek' => 'nullable|string',
+            'kapasitas' => 'required|string|max:255',
+            'jenis_kendaraan' => 'required|string|max:255',
+            'foto' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+        ]);
+
+        try {
+            $foto = null;
+            if ($request->hasFile('foto')) {
+                $file = $request->file('foto');
+                $foto = time() . '_' . $file->getClientOriginalName();
+                $file->move(public_path('foto'), $foto);
+            }
+
+
+            $bus = Bus::create([
+                'nopol'     => $request->nopol,
+                'tahun_pembuatan'  => $request->tahun_pembuatan,
+                'tipe'         => $request->tipe,
+                'merek'  => $request->merek,
+                'kapasitas'     => $request->kapasitas,
+                'jenis_kendaraan'     => $request->jenis_kendaraan,
+                'foto'           => $foto ? 'foto/' . $foto : null,
+            ]);
+
+            return response()->json([
+                'success' => true,
+                'message' => 'User berhasil ditambahkan.',
+                'data'    => $bus,
+            ], 201);
+        } catch (\Exception $e) {
+            return response()->json([
+                'success' => false,
+                'message' => 'Gagal menambahkan user.',
+                'error'   => $e->getMessage(),
+            ], 500);
+        }
     }
 
     /**

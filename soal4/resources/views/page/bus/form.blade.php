@@ -76,12 +76,12 @@
 
                                 <div class="col-md-12 mb-3">
                                     <label for="inputAddress" class="form-label">Foto Bus</label>
-                                    @if ($bus->foto)
+                                    {{-- @if ($bus->foto)
                                         <img src="{{ asset($bus->foto) }}" alt="Logo"
                                             style="width: 150px; height: ">
                                     @else
                                         -
-                                    @endif
+                                    @endif --}}
                                 </div>
 
                                 <div class="col-md-6 mb-3">

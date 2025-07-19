@@ -23,3 +23,4 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/bus', [BusController::class, 'index']);      // ambil semua user
+Route::post('/bus', [BusController::class, 'store']);
