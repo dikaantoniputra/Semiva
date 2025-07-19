@@ -35,6 +35,7 @@
                                 <th>kapasitas</th>
                                 <th>jenis_kendaraan</th>
                                 <th>Foto</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
 
@@ -55,6 +56,8 @@
                                         @else
                                             -
                                         @endif
+                                    </td>
+                                    <td><a href="{{ route('bus.edit', $bus->id) }}" class="btn btn-warning btn-sm">Edit</a>
                                     </td>
                                 </tr>
                             @empty

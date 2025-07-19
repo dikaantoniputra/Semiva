@@ -39,7 +39,7 @@ class BusController extends Controller
             'foto' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
         ]);
 
-        // Proses upload langsung ke folder public/logoinstansi
+
         $foto = null;
         if ($request->hasFile('foto')) {
             $file = $request->file('foto');
@@ -47,7 +47,7 @@ class BusController extends Controller
             $file->move(public_path('foto'), $foto);
         }
 
-        // Simpan data ke database
+
         Bus::create([
             'nopol'     => $request->nopol,
             'tahun_pembuatan'  => $request->tahun_pembuatan,
@@ -72,17 +72,48 @@ class BusController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(Bus $bus)
+    public function edit($id)
     {
-        //
+        $bus = Bus::findOrFail($id);
+
+        return view('page.bus.edit', compact('bus'));
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Bus $bus)
+    public function update(Request $request, $id)
     {
-        //
+
+        $request->validate([
+            'nopol' => 'required',
+            'tahun_pembuatan' => 'required|string|max:255',
+            'tipe' => 'nullable|string',
+            'merek' => 'nullable|string',
+            'kapasitas' => 'required|string|max:255',
+            'jenis_kendaraan' => 'required|string|max:255',
+            'foto' => 'nullable|image|mimes:jpg,jpeg,png|max:2048',
+        ]);
+
+        $bus = Bus::findOrFail($id);
+
+
+        if ($request->hasFile('foto')) {
+            $file = $request->file('foto');
+            $foto = time() . '_' . $file->getClientOriginalName();
+            $file->move(public_path('foto'), $foto);
+            $bus->foto = 'foto/' . $foto;
+        }
+
+        $bus->nopol    = $request->nopol;
+        $bus->tahun_pembuatan = $request->tahun_pembuatan;
+        $bus->tipe        = $request->tipe;
+        $bus->merek = $request->merek;
+        $bus->kapasitas    = $request->kapasitas;
+        $bus->jenis_kendaraan    = $request->jenis_kendaraan;
+        $bus->save();
+
+        return redirect()->route('bus.index')->with('success', 'Data berhasil disimpan.');
     }
 
     /**

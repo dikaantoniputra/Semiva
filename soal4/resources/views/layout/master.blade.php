@@ -9,7 +9,7 @@
 
 <!-- body start -->
 
-<body class="loading" data-layout-mode="horizontal" data-layout-color="light" data-layout-size="fluid"
+<body class="loading" data-layout-mode="horizontal" data-layout-color="dark" data-layout-size="fluid"
     data-topbar-color="dark" data-leftbar-position="fixed">
 
     <!-- Begin page -->
