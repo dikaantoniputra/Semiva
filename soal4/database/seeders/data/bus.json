@@ -1,0 +1,130 @@
+[
+    {
+        "nopol": "B 1234 ABC",
+        "tahun_pembuatan": "2018",
+        "tipe": "High Deck",
+        "merek": "Mercedes-Benz",
+        "kapasitas": "50",
+        "jenis_kendaraan": "Bus Besar"
+    },
+    {
+        "nopol": "D 5678 DEF",
+        "tahun_pembuatan": "2020",
+        "tipe": "Medium Bus",
+        "merek": "Hino",
+        "kapasitas": "32",
+        "jenis_kendaraan": "Bus Sedang"
+    },
+    {
+        "nopol": "L 9012 GHI",
+        "tahun_pembuatan": "2015",
+        "tipe": "Double Decker",
+        "merek": "Scania",
+        "kapasitas": "70",
+        "jenis_kendaraan": "Bus Besar"
+    },
+    {
+        "nopol": "F 3456 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3457 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3458 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3459 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3460 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3461 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3462 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3463 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3464 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3465 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3467 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3468 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    },
+    {
+        "nopol": "F 3469 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    }
+]
