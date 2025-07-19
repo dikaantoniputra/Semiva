@@ -1,0 +1,34 @@
+[
+    {
+        "nopol": "B 1234 ABC",
+        "tahun_pembuatan": "2018",
+        "tipe": "High Deck",
+        "merek": "Mercedes-Benz",
+        "kapasitas": "50",
+        "jenis_kendaraan": "Bus Besar"
+    },
+    {
+        "nopol": "D 5678 DEF",
+        "tahun_pembuatan": "2020",
+        "tipe": "Medium Bus",
+        "merek": "Hino",
+        "kapasitas": "32",
+        "jenis_kendaraan": "Bus Sedang"
+    },
+    {
+        "nopol": "L 9012 GHI",
+        "tahun_pembuatan": "2015",
+        "tipe": "Double Decker",
+        "merek": "Scania",
+        "kapasitas": "70",
+        "jenis_kendaraan": "Bus Besar"
+    },
+    {
+        "nopol": "F 3456 JKL",
+        "tahun_pembuatan": "2019",
+        "tipe": "Mini Bus",
+        "merek": "Isuzu",
+        "kapasitas": "18",
+        "jenis_kendaraan": "Bus Kecil"
+    }
+]
