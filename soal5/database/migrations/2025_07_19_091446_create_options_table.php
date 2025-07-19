@@ -13,7 +13,7 @@ return new class extends Migration
     {
         Schema::create('options', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('polings_id')->nullable();
+            $table->foreignId('poling_id')->constrained('polings')->nullable();
             $table->string('opsi')->nullable();
             $table->timestamps();
         });

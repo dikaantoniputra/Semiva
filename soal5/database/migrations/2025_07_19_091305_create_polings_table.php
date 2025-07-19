@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('polings', function (Blueprint $table) {
             $table->id();
+            $table->string('slug')->nullable();
             $table->string('judul')->nullable();
             $table->string('deskripsi')->nullable();
             $table->string('tanggal_mulai')->nullable();

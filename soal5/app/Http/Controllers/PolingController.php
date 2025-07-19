@@ -12,7 +12,8 @@ class PolingController extends Controller
      */
     public function index()
     {
-        //
+        $poling = Poling::all();
+        return view('page.poling.index', compact('poling'));
     }
 
     /**
@@ -20,7 +21,7 @@ class PolingController extends Controller
      */
     public function create()
     {
-        //
+        return view('page.poling.create');
     }
 
     /**
