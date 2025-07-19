@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Api;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Api\BusController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/bus', [BusController::class, 'index']);      // ambil semua user
+Route::post('/bus', [BusController::class, 'store']);     // tambah user
+Route::get('/bus/{id}', [BusController::class, 'show']);  // detail user
+Route::put('/bus/{id}', [BusController::class, 'update']); // update user
+Route::delete('/bus/{id}', [BusController::class, 'destroy']); // hapus user

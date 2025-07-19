@@ -15,4 +15,8 @@ use App\Http\Controllers\BusController;
 |
 */
 
+Route::get('/', function () {
+    return redirect()->route('bus.index');
+});
+
 Route::resource('bus', BusController::class);
