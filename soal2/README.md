@@ -37,11 +37,11 @@ php artisan migrate –seed  atau php artisan migrate:fresh --seed
 
 
 Saya menambahkan end ponin berikut
-Get  http://127.0.0.1:8000/api/bus
+Get  http://127.0.0.1:8000/api/bus 
 Post http://127.0.0.1:8000/api/bus
-Put http://localhost:8000/api/bus/1 contoh
-Get http://127.0.0.1:8000/api/bus?page=2
-Get  http://127.0.0.1:8000/api/bus?search=Nopol
+Simpan uplod gambar ke folder public
+
+
 
 
 
